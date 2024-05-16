@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Typing Speed Test</h1>
+      <div class="stats">
+        <div class="stat">ERRORS: <span id="errors"></span></div>
+        <div class="stat">TIME: <span id="time"></span></div>
+        <div class="stat">% ACCURACY: <span id="accuracy"></span></div>
+      </div>
+      <p id="prompt">클릭해서 타이핑을 시작하세요.</p>
+      <p id="sentence" style="display: none"></p>
+      <textarea
+        id="typing-area"
+        rows="3"
+        placeholder="Click here to start typing..."
+      ></textarea>
+      <div id="results" style="display: none"></div>
+      <button id="restart-button" style="display: none">Restart Game</button>
+    </div>
+    <script src="./src/javascript/main.js"></script>
+  </body>
+</html>
