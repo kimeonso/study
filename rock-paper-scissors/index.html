@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Rock Paper Scissors</h1>
+      <div class="scoreboard">
+        <div>플레이어: <span id="playerScore">0</span></div>
+        <div>컴퓨터: <span id="computerScore">0</span></div>
+      </div>
+      <div class="game-info">
+        <div class="choices">
+          <img src="./src/img/scissors.png" alt="가위" onclick="play('가위')" />
+          <img src="./src/img/rock.png" alt="바위" onclick="play('바위')" />
+          <img src="./src/img/paper.png" alt="보" onclick="play('보')" />
+        </div>
+        <div id="result">남은 횟수: 10</div>
+      </div>
+    </div>
+    <script src="./src/javascript/main.js"></script>
+  </body>
+</html>
