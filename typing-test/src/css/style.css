@@ -9,9 +9,9 @@ html {
   font-family: Arial, sans-serif;
   background-color: #fff;
   display: flex;
-  align-items: center; /* Vertically centers the content */
-  justify-content: center; /* Horizontally centers the content */
-  overflow: hidden; /* Prevents scrollbars if the content exactly fits the viewport */
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .container {
@@ -19,16 +19,16 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%; /* Increased width percentage */
-  max-width: 1100px; /* Increased max-width for larger screens */
+  width: 100%;
+  max-width: 1100px;
   background-color: #fff;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.23);
-  padding: 30px; /* Padding to provide internal space */
+  padding: 30px;
   border-radius: 10px;
 }
 
 .header {
-  width: 100%; /* Ensures the header fills the width of the container */
+  width: 100%;
   background-color: #ff8c00;
   color: white;
   font-size: 24px;
