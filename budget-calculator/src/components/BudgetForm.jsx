@@ -6,9 +6,13 @@ function BudgetForm({ onAddItem }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    onAddItem({ name, cost: Number(cost) });
-    setName('');
-    setCost('');
+    if (name.trim() !== '' && cost.trim() !== '') {
+      onAddItem({ name, cost: Number(cost) });
+      setName('');
+      setCost('');
+    } else {
+      alert('Please enter both a name and a cost.');
+    }
   };
 
   return (
