@@ -24,7 +24,7 @@ function App() {
   const totalCost = items.reduce((total, item) => total + item.cost, 0);
 
   return (
-    <div>
+    <div className="container">
       <h1>💸Budget Calculator</h1>
       <BudgetForm onAddItem={handleAddItem} />
       {items.map((item, index) => (
